@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dropdown components</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Big thanks to @ryanflorence https://gist.github.com/ryanflorence/f75b6e4d543f20bf12f9dbe925994091 -->
+
+    <!-- Menu Item Dropdown -->
+    <section>
+        <nav-dropdown id="menu-item-dropdown">
+            <nav-dropdown-button>
+                <button>lien 1</button>
+            </nav-dropdown-button>
+    
+            <nav-dropdown-popover>
+                <div class="dropdown-arrow"></div>
+
+                <a href="#">lien 2</a>
+                <a href="#">lien 3</a>
+                <a href="#">lien 4</a>
+            </nav-dropdown-popover>
+        </nav-dropdown>
+    </section>
+
+    <!-- Mobile menu -->
+    <section>
+        <nav-dropdown id="mobile-menu">
+            <nav-dropdown-button>
+                <button>
+                    <svg width="24" height="24"><path d="M5 6h14M5 12h14M5 18h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+                </button>
+            </nav-dropdown-button>
+    
+            <nav-dropdown-popover>
+                <a href="#">lien 2</a>
+                <a href="#">lien 3</a>
+                <a href="#">lien 4</a>
+            </nav-dropdown-popover>
+        </nav-dropdown>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
